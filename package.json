@@ -1,0 +1,37 @@
+{
+  "name": "stale-watchdog-create-issues",
+  "version": "1.0.0",
+  "description": "Take stale docs and create issues for each",
+  "main": "index.js",
+  "keywords": [
+    "actions",
+    "issues",
+    "stale",
+    "docs"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "whitesunset",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitesunset/stale-watchdog-create-issues-action.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}

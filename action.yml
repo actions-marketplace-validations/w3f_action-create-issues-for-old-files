@@ -1,0 +1,37 @@
+name: "Stale Watchdog Create Issues"
+description: "Get a file list from input and create issue for each of them"
+
+branding:
+  icon: 'alert-circle'
+  color: 'yellow'
+
+inputs:
+  files: 
+    description: 'List of staled files'
+    required: true
+    default: 'staled.json'
+  body:
+    description: 'Issue message body'
+    required: true
+    default: 'Last edit happened $$$ days ago 😬'
+  prefix:
+    description: 'Issue title prefix'
+    required: true
+    default: '[STALE]'
+  labels:
+    description: 'Issue labels'
+    required: true
+    default: '["docs", "stale"]'
+  assignees: 
+    description: 'Assignees list'
+    required: false
+  randAssignees:
+    description: 'Assignees list, pick one at random'
+    required: false
+  max:
+    description: 'Max issues to create per one run'
+    required: true
+    default: '2'
+runs:
+  using: "node12"
+  main: "dist/index.js"
