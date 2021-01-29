@@ -1,7 +1,7 @@
 {
-  "name": "stale-watchdog-create-issues",
+  "name": "Create issues for old files",
   "version": "1.0.0",
-  "description": "Take stale docs and create issues for each",
+  "description": "Take stale files and create issue for each",
   "main": "index.js",
   "keywords": [
     "actions",
@@ -14,10 +14,13 @@
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "whitesunset",
+  "contributors": [
+    "https://github.com/whitesunset",
+    "Bruno Škvorc <bruno@web3.foundation>"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whitesunset/stale-watchdog-create-issues-action.git"
+    "url": "git+https://github.com/w3f/stale-watchdog-create-issues-action.git"
   },
   "license": "ISC",
   "devDependencies": {
