@@ -1,4 +1,4 @@
-name: "Stale Watchdog Create Issues"
+name: "Create issues for old files"
 description: "Get a file list from input and create issue for each of them"
 
 branding:
@@ -7,7 +7,7 @@ branding:
 
 inputs:
   files: 
-    description: 'List of staled files'
+    description: 'List of stale files'
     required: true
     default: 'staled.json'
   body:
